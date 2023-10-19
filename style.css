@@ -7,9 +7,18 @@
 .bg-2 {
     background-color: #F99417;
 }
+
 .text-2 {
     color: #F99417;
 }
 .text-1 {
+    color: #F5F5F5;
+}
+
+.height-screen {
+    height: 100vh;
+}
+
+#exampleFormControlInput1::placeholder, #exampleFormControlInput2::placeholder, #exampleFormControlTextarea1::placeholder {
     color: #F5F5F5;
 }
