@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="personal portfolio">
+    <meta name="description" content="A responsive personal portfolio">
+    <meta name="author" content="Sudeep Kumar Srivastava">
     <title>Personalis Portfolio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,7 +46,7 @@
     </nav>
 
     <!-- Home -->
-    <div id="home" class="container-fluid height-screen d-flex flex-column-reverse justify-content-center flex-md-row align-items-md-center bg-3">
+    <div id="home" class="container-fluid d-flex flex-column-reverse justify-content-evenly flex-md-row align-items-md-center bg-3">
         <div class="container text-center text-1">
             <h1>Hi, I'm <p class="d-inline text-2">Sudeep</p></h1>
             <h1>Srivastava from India</h1>
@@ -53,9 +59,9 @@
     </div>
 
     <!-- About -->
-    <div id="about" class="container-fluid height-screen d-flex flex-column justify-content-center flex-md-row align-items-md-center bg-3">
+    <div id="about" class="container-fluid d-flex flex-column justify-content-evenly flex-md-row align-items-md-center bg-3">
         <div class="container text-center">
-            <img class="h-75 w-75 rounded-circle" src="./images/me.jpg" alt="loading">
+            <img id="about-image" class="rounded-circle" src="./images/me.jpg" alt="loading">
         </div>
         <div class="container">
             <h1 class="text-2">About Me</h1>
@@ -100,7 +106,7 @@
     </div>
 
     <!-- Skills -->
-    <div id="skills" class="container-fluid height-screen d-flex flex-column justify-content-center text-center bg-3">
+    <div id="skills" class="container-fluid d-flex flex-column justify-content-center text-center bg-3">
         <h1 class="text-2">My Skills</h1>
         <h3 class="text-2 mb-3">Front-end Development</h3>
         <div class="container mb-5">
@@ -128,40 +134,40 @@
     </div>
 
     <!-- Works -->
-    <div id="works" class="container-fluid height-screen d-flex flex-column justify-content-center bg-3">
-        <div class="container text-center mb-3">
+    <div id="works" class="container-fluid d-flex flex-column bg-3">
+        <div id="works-heading" class="container text-center">
             <h1 class="text-2">My Works</h1>
         </div>
-        <div class="container d-flex flex-wrap justify-content-around align-items-center flex-lg-row">
-            <div class="card bg-4" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="loading">
+        <div class="container d-flex flex-row flex-wrap justify-content-around">
+            <div id="works-card" class="card bg-4" style="width: 18rem;">
+                <img src="./images/a.png" class="card-img-top" alt="loading">
                 <div class="card-body">
                     <h5 class="card-title text-2">WhatsApp Chat Analyzer</h5>
                     <p class="card-text text-1">Get most busy users, most used words, most used emojis. Get Monthly, Daily, Hourly chat timelines. Classify messages using Text Blob and Vader.</p>
-                    <a href="" class="btn bg-2 text-1">See More</a>
+                    <a href="" class="btn bg-2 text-1">Visit</a>
                 </div>
             </div>
-            <div class="card bg-4" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="loading">
+            <div id="works-card" class="card bg-4" style="width: 18rem;">
+                <img src="./images/a.png" class="card-img-top" alt="loading">
                 <div class="card-body">
                     <h5 class="card-title text-2">Arcessere</h5>
                     <p class="card-text text-1">Get weather conditions of city like Temperature, Pressure, Humidity. Get information of movie like Actors, Released Date, Ratings. Get daily update of news like Entertainment, Sports, Technology.</p>
-                <a href="" class="btn bg-2 text-1">See More</a>
+                <a href="" class="btn bg-2 text-1">Visit</a>
                 </div>
             </div>
-            <div class="card bg-4" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="loading">
+            <div id="works-card" class="card bg-4" style="width: 18rem;">
+                <img src="./images/a.png" class="card-img-top" alt="loading">
                 <div class="card-body">
                 <h5 class="card-title text-2">Perierat Inventum</h5>
                 <p class="card-text text-1">Add and Store details of lost/found item along with its finder/owner. Delete obsolete items and Update existing items.</p>
-                <a href="" class="btn bg-2 text-1">See More</a>
+                <a href="" class="btn bg-2 text-1">Visit</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Contact -->
-    <div id="contact" class="container-fluid height-screen d-flex flex-column justify-content-center flex-md-row align-items-md-center bg-3">
+    <div id="contact" class="container-fluid d-flex flex-column justify-content-evenly flex-md-row align-items-md-center bg-3">
         <div class="container text-center">
             <h1 class="text-2 mb-3">Contact Me</h1>
             <h5 class="text-1"><img src="./icons/gmail.png" alt="loading"> sudeepsri23@gmail.com</h5>
@@ -200,7 +206,7 @@
                 <label for="message" class="form-label text-2">Your Message</label>
                 <textarea class="form-control bg-4 text-1" id="message" rows="5" placeholder="What you want to say?"></textarea>
             </div>
-            <button type="button" class="btn bg-2 text-1" onclick="onSend()">Send</button>
+            <button type="button" class="btn bg-2 text-1" onclick="SendHandler()">Send</button>
         </div>
     </div>
 
