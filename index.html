@@ -101,9 +101,9 @@
 
     <!-- Skills -->
     <div id="skills" class="container-fluid height-screen d-flex align-items-center bg-3">
-        <div class="container text-center text-2">
-            <h1>My Skills</h1>
-            <h3 class="mb-3">Front-end Development</h3>
+        <div class="container text-center">
+            <h1 class="text-2">My Skills</h1>
+            <h3 class="text-2 mb-3">Front-end Development</h3>
             <div class="container mb-5">
                 <img class="mx-2" src="./icons/html.png" alt="loading">
                 <img class="mx-2" src="./icons/css.png" alt="loading">
@@ -113,7 +113,7 @@
                 <img class="mx-2" src="./icons/redux.png" alt="loading">
                 <img class="mx-2" src="./icons/git.png" alt="loading">
             </div>
-            <h3 class="mb-3">Machine Learning</h3>
+            <h3 class="text-2 mb-3">Machine Learning</h3>
             <div class="container">
                 <img class="mx-2" src="./icons/python.png" alt="loading">
                 <img class="mx-2" src="./icons/numpy.png" alt="loading">
@@ -132,8 +132,8 @@
     <!-- Works -->
     <div id="works" class="container-fluid height-screen d-flex align-items-center bg-3">
         <div class="container">
-            <div class="container text-center text-2 mb-3">
-                <h1>My Works</h1>
+            <div class="container text-center mb-3">
+                <h1 class="text-2">My Works</h1>
             </div>
             <div class="container d-flex flex-row justify-content-around">
                 <div class="card bg-4" style="width: 18rem;">
@@ -191,23 +191,24 @@
                 <a class="text-1 text-decoration-none" href="https://drive.usercontent.google.com/download?id=1kpQ3ZRzX1UCoVG39mFf5LNxo5oJwgUJK&export=download&authuser=0&confirm=t&uuid=9f8bf4aa-ff9e-45fa-b375-a8dec9f8f626&at=APZUnTVfrx80PQnGSHgBXBHGtMFv:1697726356192">Resume</a>
             </button>
         </div>
-        <div class="container text-2">
+        <div class="container">
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Your Name</label>
-                <input type="text" class="form-control bg-4 text-1" id="exampleFormControlInput1" placeholder="What's your good name?">
+                <label for="name" class="form-label text-2">Your Name</label>
+                <input type="text" class="form-control bg-4 text-1" id="name" placeholder="What's your good name?">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput2" class="form-label">Your Email</label>
-                <input type="email" class="form-control bg-4 text-1" id="exampleFormControlInput2" placeholder="What's your email address?">
+                <label for="email" class="form-label text-2">Your Email</label>
+                <input type="email" class="form-control bg-4 text-1" id="email" placeholder="What's your email address?">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
-                <textarea class="form-control bg-4 text-1" id="exampleFormControlTextarea1" rows="3" placeholder="What you want to say?"></textarea>
+                <label for="message" class="form-label text-2">Your Message</label>
+                <textarea class="form-control bg-4 text-1" id="message" rows="5" placeholder="What you want to say?"></textarea>
             </div>
-            <button type="button" class="btn bg-2 text-1">Send</button>
+            <button type="button" class="btn bg-2 text-1" onclick="onSend()">Send</button>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

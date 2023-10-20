@@ -19,6 +19,6 @@
     height: 100vh;
 }
 
-#exampleFormControlInput1::placeholder, #exampleFormControlInput2::placeholder, #exampleFormControlTextarea1::placeholder {
+#name::placeholder, #email::placeholder, #message::placeholder {
     color: #F5F5F5;
 }
