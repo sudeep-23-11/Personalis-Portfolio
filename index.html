@@ -8,10 +8,11 @@
     <meta name="author" content="Sudeep Kumar Srivastava">
     <title>Personalis Portfolio</title>
 
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -140,27 +141,27 @@
         </div>
         <div class="container d-flex flex-row flex-wrap justify-content-around">
             <div id="works-card" class="card bg-4" style="width: 18rem;">
-                <img src="./images/a.png" class="card-img-top" alt="loading">
+                <img src="./images/whatsapp-chat-analyzer.png" class="card-img-top" alt="loading">
                 <div class="card-body">
                     <h5 class="card-title text-2">WhatsApp Chat Analyzer</h5>
                     <p class="card-text text-1">Get most busy users, most used words, most used emojis. Get Monthly, Daily, Hourly chat timelines. Classify messages using Text Blob and Vader.</p>
-                    <a href="" class="btn bg-2 text-1">Visit</a>
+                    <a href="" target="_blank" class="btn bg-2 text-1">Visit</a>
                 </div>
             </div>
             <div id="works-card" class="card bg-4" style="width: 18rem;">
-                <img src="./images/a.png" class="card-img-top" alt="loading">
+                <img src="./images/arcessere.png" class="card-img-top" alt="loading">
                 <div class="card-body">
                     <h5 class="card-title text-2">Arcessere</h5>
                     <p class="card-text text-1">Get weather conditions of city like Temperature, Pressure, Humidity. Get information of movie like Actors, Released Date, Ratings. Get daily update of news like Entertainment, Sports, Technology.</p>
-                <a href="" class="btn bg-2 text-1">Visit</a>
+                <a href="https://arcessere.vercel.app/" target="_blank" class="btn bg-2 text-1">Visit</a>
                 </div>
             </div>
             <div id="works-card" class="card bg-4" style="width: 18rem;">
-                <img src="./images/a.png" class="card-img-top" alt="loading">
+                <img src="./images/perierat-inventum.png" class="card-img-top" alt="loading">
                 <div class="card-body">
                 <h5 class="card-title text-2">Perierat Inventum</h5>
                 <p class="card-text text-1">Add and Store details of lost/found item along with its finder/owner. Delete obsolete items and Update existing items.</p>
-                <a href="" class="btn bg-2 text-1">Visit</a>
+                <a href="https://perierat-inventum.vercel.app/" target="_blank" class="btn bg-2 text-1">Visit</a>
                 </div>
             </div>
         </div>
@@ -195,18 +196,18 @@
         </div>
         <div class="container">
             <div class="mb-3">
-                <label for="name" class="form-label text-2">Your Name</label>
+                <label for="name" class="form-label text-2 fw-bold">Your Name</label>
                 <input type="text" class="form-control bg-4 text-1" id="name" placeholder="What's your good name?">
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label text-2">Your Email</label>
+                <label for="email" class="form-label text-2 fw-bold">Your Email</label>
                 <input type="email" class="form-control bg-4 text-1" id="email" placeholder="What's your email address?">
             </div>
             <div class="mb-3">
-                <label for="message" class="form-label text-2">Your Message</label>
-                <textarea class="form-control bg-4 text-1" id="message" rows="5" placeholder="What you want to say?"></textarea>
+                <label for="message" class="form-label text-2 fw-bold">Your Message</label>
+                <textarea class="form-control bg-4 text-1" id="message" rows="4" placeholder="What you want to say?"></textarea>
             </div>
-            <button type="button" class="btn bg-2 text-1" onclick="SendHandler()">Send</button>
+            <button type="button" class="btn bg-2 text-1" onclick="sendHandler()">Send</button>
         </div>
     </div>
 
